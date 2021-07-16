@@ -1,0 +1,277 @@
+<!DOCYPE html>
+
+<html lang="en">
+
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+
+<style>
+
+.container{
+    padding: 0px;
+}
+
+body{
+    margin: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eee;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 3fr 2fr;
+    max-height: 75px;
+    min-height: 75px;
+    background-color: ivory;
+    width: 95%;
+    left: 2.5%;
+    top:1%;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menu {
+    margin-top: 75px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.content {
+    align-items: center;
+    font-size: 1em;
+    height: 300px;
+    max-width: 1000px;
+    min-width: 200px;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 5fr;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 2em;
+    height: 100px;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 500px;
+    
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
+.header > div:nth-child(1n) {
+  background-color: #ff6f69;	
+}
+
+.header > div:nth-child(2n) {
+  background-color: #88d8b0;
+}
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    max-width: 1200px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    box-sizing:border-box;
+    justify-self: center;
+    height: 50px;
+}
+
+li {
+    float: center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  font-size: 15px;
+}
+
+nav {
+  font-weight: 400;
+}
+
+.odeng{
+text-align:left;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.level1{
+    border: 1px solid black;
+    background-color: grey;
+    padding: 10px;
+    height: 30px;
+}
+.price{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin:0 15px 0px 15px;
+    width: 300px;
+}
+
+</style>
+
+<div class="header">
+    <div class = "logo" style = "font-size: 24px;">
+        <div>
+            <i class="fas fa-cat fa-2x"></i>
+        </div>
+        <div style="margin-left:20px;"></i>Original Memes</div>
+    </div>
+    <div class = "minimenu">
+    <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+  </ul>
+</div>
+</div>
+
+<div class = container>
+    <div class="menu">
+        <br>        
+        <label for="email" style: "font-size: 20px;">Handcrafted, home-made masterpiece memes</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+        <input type="submit" id="submit" value="Get Started">
+        <br>
+    </div>
+    <div class="content">
+        <div>
+            <i class="fas fa-cat fa-4x"></i>
+            </div>
+        <div class = "odeng">
+        <h1 style = "line-height: 0; font-size:24px">Premium Materials</h1> 
+        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+        </div>
+        <div>
+            <i class="fas fa-dog fa-4x"></i>
+        </div>
+        <div class = "odeng">
+        <h2 style = "line-height: 0; font-size:24px">Fast Shipping</h2> 
+        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.    
+        </div>
+        <div>
+            <i class="fas fa-dove fa-4x"></i>
+        </div>
+        <div class = "odeng">
+        <h3 style = "line-height: 0; font-size:24px">Quality Assurance</h3> 
+        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.    
+        </div>
+    </div>
+    <div class = "video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class ="pricing">
+        <div class = price>
+                <div class="level1">Valve Trombone</div>
+                <h2>$1200</h2>
+                <ol style="list-style-type:none; display: inline-block; padding:0; margin:0; line-height: 180%">
+                  <li>Plays similar to a Trumpet</li>
+                  <li>Great for Jazz Bands</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <br><br>
+                <button class="btn">Select</button>
+        </div>
+        <div class = price>
+            <div class="level1">Bass Trombone</div>
+                <h2>$1200</h2>
+                <ol style="list-style-type:none; display: inline-block;padding:0; margin:0; line-height: 180%">
+                  <li>Plays similar to a Trumpet</li>
+                  <li>Great for Jazz Bands</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <br><br>
+                <button class="btn">Select</button>
+        </div>
+        <div class = price>
+            <div class="level1">Bass Trombone</div>
+                <h2>$1200</h2>
+                <ol style="list-style-type:none; display: inline-block;padding:0; margin:0; line-height: 180%">
+                  <li>Plays similar to a Trumpet</li>
+                  <li>Great for Jazz Bands</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                            </ol>
+                            <br><br>
+                <button class="btn">Select</button>
+            </div>
+    </div>
+    <div class="footer">
+    <div style= "line-height: 0px;">
+        <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div style= "line-height: 0px;">
+        Copyright 2021, Original Memes
+    </div>
+</div>
+</div>
+
+
+
+</html>
