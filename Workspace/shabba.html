@@ -1,0 +1,57 @@
+<!DOCYPE html>
+
+<html lang="en">
+<style>
+
+.header {
+    display: flex;
+    position: fixed;
+    grid-template-columns: 4fr 3fr;
+    max-height: 100px;
+    min-height: 75px;
+    background-color: ivory;
+    width: 100%;
+    left: 0%;
+    top:0%;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    margin: auto;
+    background-color: ivory;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .header{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: ivory;
+        align-items: center;
+
+        /* padding: 0 50px; */
+    }
+}
+
+</style>
+
+<div class="header">
+    <div class = "logo" style = "font-size: 24px;">
+        <div>
+            <i class="fas fa-cat fa-2x"></i>
+        </div>
+        <div style="margin-left:20px;"></i>Original Memes</div>
+    </div>
+    <div class = "minimenu">
+    <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+  </ul>
+</div>
+</div>
+
+</html>

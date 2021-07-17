@@ -16,39 +16,43 @@
 body{
     margin: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #eee;
+    background-color: ivory;
+    /* background-color: #eee; */
     align-items: center;
 }
 
 .header {
-    display: grid;
+    display: flex;
     position: fixed;
-    grid-template-columns: 3fr 2fr;
-    max-height: 75px;
-    min-height: 75px;
     background-color: ivory;
-    width: 95%;
-    left: 2.5%;
-    top:1%;
-    align-items: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    width: 100%;
+    left: 0%;
+    top:0%;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    margin: auto;
+    background-color: ivory;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .menu {
     margin-top: 75px;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 2em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    background-color: ivory;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .content {
     align-items: center;
     font-size: 1em;
     height: 300px;
+    margin: -20px;
     max-width: 1000px;
     min-width: 200px;
     align-self: center;
@@ -56,6 +60,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     display:grid;
+    background-color: ivory;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 5fr;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -67,6 +72,7 @@ body{
     align-items:flex-end;
     font-size: 2em;
     height: 100px;
+    background-color: ivory;
     flex-direction: column;
     font-size: 14px;
 }
@@ -75,39 +81,46 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ivory;
     font-size: 2em;
     height: 500px;
     
 }
 
 .container > div:nth-child(1n) {
-  background-color: #96ceb4;	
+    background-color: ivory;
+    /* background-color: #96ceb4;	 */
 }
 
 .container > div:nth-child(3n) {
-  background-color: #88d8b0;
+    background-color: ivory;
+    /* background-color: #88d8b0; */
 }
 
 .container > div:nth-child(2n) {
-      background-color: #ff6f69;
+    background-color: ivory;  
+    /* background-color: #ff6f69; */
 }
 
 .container > div:nth-child(4n) {
-      background-color: #ffcc5c;
-}
+      /* background-color: #ffcc5c; */
+      background-color: ivory;
+    }
 
 .header > div:nth-child(1n) {
-  background-color: #ff6f69;	
+    background-color: ivory;
+  /* background-color: #ff6f69;	 */
 }
 
 .header > div:nth-child(2n) {
-  background-color: #88d8b0;
+    background-color: ivory;
+  /* background-color: #88d8b0; */
 }
 
 .pricing{
     display: flex;
     justify-content: center;
-    border: 5px solid black;
+    background-color:grey;
     max-width: 1200px;
     flex-direction: row;
     margin-left: auto;
@@ -123,10 +136,9 @@ ul {
     justify-content: space-between;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: ivory;
     box-sizing:border-box;
     justify-self: center;
-    height: 50px;
 }
 
 li {
@@ -134,11 +146,11 @@ li {
 }
 li a {
   display: block;
-  color: white;
+  color:black;
   text-align: center;
   text-decoration: none;
-  align-items: center;
-  font-size: 15px;
+  font-size: 17.5px;
+  padding: 10px;
 }
 
 nav {
@@ -149,23 +161,102 @@ nav {
 text-align:left;
 }
 
+.odeng1{
+text-align:left;
+}
+
+.odeng2{
+text-align:left;
+}
+
 .logo{
+    padding: 20px;
     display:flex;
     align-items: center;
 }
 
-.level1{
-    border: 1px solid black;
-    background-color: grey;
-    padding: 10px;
-    height: 30px;
-}
 .price{
-    background-color: white;
+    background-color: lightgray;
     border: 1px solid black;
     padding: 10px;
     margin:0 15px 0px 15px;
     width: 300px;
+}
+
+@media (max-width: 600px) {
+    .header{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: ivory;
+        align-items: center;
+        top: -2%;
+    }
+    .minimenu{
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-items: flex-start;
+        /* padding: 0 50px; */
+    }
+    .piupiu{
+        height: 80px;
+    }
+    .uhoh {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    li {
+    float:none;
+}
+    li a {   
+    padding: 0;
+    }
+
+.odeng{
+    text-align: center;
+    grid-area: odeng;
+}
+.odeng1{
+    text-align: center;
+    grid-area: odeng1;
+}
+.odeng2{
+    text-align: center;
+    grid-area: odeng2;
+}
+.teehee{
+    grid-area: teehee;
+    display:none;
+}
+.teehee1{
+    grid-area: teehee1;
+    display:none;
+}
+.teehee2{
+    grid-area: teehee2;
+    display:none;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-template-areas:
+                "odeng"
+                "odeng1"
+                "odeng2"
+}
+
+.piupiu {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
 }
 
 </style>
@@ -178,7 +269,7 @@ text-align:left;
         <div style="margin-left:20px;"></i>Original Memes</div>
     </div>
     <div class = "minimenu">
-    <ul>
+    <ul class = "uhoh">
         <li><a class="nav-link" href="#features">Features</a></li>
         <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
         <li><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -186,39 +277,41 @@ text-align:left;
 </div>
 </div>
 
+<div class = "piupiu"></div>
+
 <div class = container>
     <div class="menu">
         <br>        
-        <label for="email" style: "font-size: 20px;">Handcrafted, home-made masterpiece memes</label><br>
+        <label for="email" style = "font-size: 24px;"><strong>Handcrafted, home-made memes</strong></label><br>
         <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
         <input type="submit" id="submit" value="Get Started">
         <br>
     </div>
     <div class="content">
-        <div>
+        <div class = teehee>
             <i class="fas fa-cat fa-4x"></i>
             </div>
         <div class = "odeng">
         <h1 style = "line-height: 0; font-size:24px">Premium Materials</h1> 
         Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
         </div>
-        <div>
+        <div class = teehee1>
             <i class="fas fa-dog fa-4x"></i>
         </div>
-        <div class = "odeng">
+        <div class = "odeng1">
         <h2 style = "line-height: 0; font-size:24px">Fast Shipping</h2> 
         Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.    
         </div>
-        <div>
+        <div class = teehee2>
             <i class="fas fa-dove fa-4x"></i>
         </div>
-        <div class = "odeng">
+        <div class = "odeng2">
         <h3 style = "line-height: 0; font-size:24px">Quality Assurance</h3> 
         Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.    
         </div>
     </div>
     <div class = "video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xHotXbGZiFY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
     <div class ="pricing">
         <div class = price>
@@ -261,9 +354,9 @@ text-align:left;
     <div class="footer">
     <div style= "line-height: 0px;">
         <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#Terms">Terms</a></li>
+            <li><a href="#Contact">Contact</a></li>
       </ul>
     </div>
     <div style= "line-height: 0px;">
